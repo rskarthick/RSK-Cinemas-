@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>Receipt</h1>
+  <div class="row bg-info">
+    <div class="col-md-3">
+      <br>
+      <br>
+      <img src="assets/images/qr.png" alt="">
+    </div>
+    <br>
+    <br>
+    <div class="col-lg-4">
+      <div class="well">
+        <h4 style="letter-spacing:5px">ORDER SUMMARY</h4><br/>
+        <h4 id="Movieheading">{{confirmationCtrl.movieName}}</h4>
+        <p><span id="Cinema">{{confirmationCtrl.theatreName}}</span></p>
+        <!-- <p><span id="Seatclass"></span> - <span id="Seatno"></span></p> -->
+        <p>No. of Tickets - <span id="Ticketcount">{{confirmationCtrl.noOfSeats}}</span> Tickets</p>
+        <h4 id="Moviedate">{{confirmationCtrl.date}}</h4>
+        <h5 id="ShowTime">{{confirmationCtrl.time}}</h5>
+        <hr size="5px"/>
+        <table width="100%" height="100px">
+          <tr>
+            <td>Amount Paid</td>
+            <th style="text-align:right; font-size:20px"><span id="Amount">{{confirmationCtrl.grandTotal}}</span></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <h1>Thank you for Booking!</h1>
+</div>
